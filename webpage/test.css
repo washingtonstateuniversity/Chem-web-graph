@@ -41,7 +41,7 @@ a:hover, a:active, a:focus {
 
 .sidebar {
 	width: 10%;
-	height: 860px;
+	height: 960px;
 	display: block;
 	background-color: #FFF;
 	margin: 10px;
@@ -52,7 +52,7 @@ a:hover, a:active, a:focus {
 
 .main {
 	width: 80%;
-	height: 900px;
+	height: 1000px;
 	float: left;
 	padding: 10px;
 }
@@ -76,10 +76,8 @@ a:hover, a:active, a:focus {
 	float: left;
 }
 
-.graphbox {
-	width:40%;
-	padding: 20px;
-	float: left;
+#graphbox {
+	border: 5px solid grey;
 }
 
 .control {
@@ -90,12 +88,16 @@ a:hover, a:active, a:focus {
 }
 
 .result {
-	width: 25%;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	background-color: #FFF;
 	float: left;
 	padding: 10px;
 	margin: 10px;
+}
+
+.resultbox {
+	border: 1px solid red;
 }
 
 .footarea {

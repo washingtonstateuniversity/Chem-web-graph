@@ -1,0 +1,112 @@
+body {
+	margin: 50px;
+	color: #353535; 
+	font-size: 20px; 
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #e6e5d7;
+}
+
+a {
+    font-weight: bold;
+}
+a:link {
+    color: #FF6600;
+}
+a:visited {
+    color: #FF944C;
+}
+a:hover, a:active, a:focus {
+    color: #7F3300;
+    text-decoration: underline;
+}
+
+.top {
+	width: 70%;
+	height: 100px;
+	margin: 30px;
+	padding: 20px;
+	background-color: #FFF;
+	font-size: 20px;
+}
+
+#topnav ul {
+	list-style-type: none;
+}
+
+#topnav a {
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+.sidebar {
+	width: 10%;
+	height: 860px;
+	display: block;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 20px;
+	float: left;
+}
+
+
+.main {
+	width: 80%;
+	height: 900px;
+	float: left;
+	padding: 10px;
+}
+
+.intro {
+	background-color: #FFF;
+	width: 25%;
+	height: 650px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	float: left;
+}
+
+.graph {
+	background-color: #FFF;
+	width: 50%;
+	height: 650px;
+	margin-bottom: 20px;
+	padding: 10px;
+	float: left;
+}
+
+.graphbox {
+	width:40%;
+	padding: 20px;
+	float: left;
+}
+
+.control {
+	width: 50%;
+	height: 30px;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.result {
+	width: 25%;
+	height: 200px;
+	background-color: #FFF;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+.footarea {
+	width: 80%;
+	height: 20px;
+	background-color: #FFF;
+	margin: 20px;
+	padding: 10px;
+	float: left;
+}
+
+
+
+

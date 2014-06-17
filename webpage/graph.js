@@ -1,9 +1,9 @@
 // set up SVG for D3
-var width  = 600,
-    height = 500,
+var width  = 500,
+    height = 400,
     colors = d3.scale.category10();
 
-var svg = d3.select('body')
+var svg = d3.select('#graphbox')
   .append('svg')
   .attr('width', width)
   .attr('height', height);

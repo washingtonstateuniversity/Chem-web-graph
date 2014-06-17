@@ -49,9 +49,9 @@
           })
           // first disable the graph editor and then send data to server
           $('#mysend').click(function(){
-            $('#graphbox').prop('disabled', true);
-          })//end of click function
-        
+            $('#graphbox').prop('disabled',true);
+            console.log('test');
+          })//end of click function  
       });
       </script>
 
@@ -62,27 +62,35 @@
         </div>
 
         <div id="graphbox">
-          <iframe src="index.html" width="500" height="400"></iframe>
-          <a href="http://www.google.com">google</a>
+          <link rel="stylesheet" type="text/css" href="graph.css">
+          <script type="text/javascript" src="graph.js"></script>
+          <a href="http://www.google.com">google link</a>
         </div>
 
       </div> <!-- end of graph -->
 
       <div class="result" id="first">
         <p>1st result</p>
-        <div id="1st">
-          <iframe src="result1.html" width="200" height="100"></iframe>
+        <div class="resultbox" id="box1">
+          <link rel="stylesheet" type="text/css" href="result1.css">
+          <script type="text/javascript" src="result1.js"></script>
         </div>
-      </div>
+      </div> <!-- end of div.first-->
 
       <div class="result" id="second">
         <p>2nd result</p>
-        <iframe src="result2.html" width="200" height="100">sss</iframe>
+          <div class="resultbox" id="box2">
+            <link rel="stylesheet" type="text/css" href="result2.css">
+            <script type="text/javascript" src="result2.js"></script>
+          </div>
       </div>
 
       <div class="result" id="third">
         <p>3rd result</p>
-        <iframe src="result3.html" width="200" height="100">sss</iframe>
+          <div class="resultbox" id="box3">
+            <link rel="stylesheet" type="text/css" href="result3.css">
+            <script type="text/javascript" src="result3.js"></script>
+          </div>
       </div>
 
 

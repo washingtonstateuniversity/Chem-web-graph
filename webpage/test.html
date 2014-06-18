@@ -41,17 +41,26 @@
           show/hide graph:
           submit: send the graph information to the server
       -->
-      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/jquery.blockUI.js"></script> <!-- use blockUI plugin to block a div -->
+      
+      <!-- script for control panel-->
       <script>
       jQuery(document).ready(function() {
+
           $('#myshowhide').click(function(){
             $('#graphbox').toggle("slow");
-          })
+          }) //end of my show/hide
+
           // first disable the graph editor and then send data to server
           $('#mysend').click(function(){
-            $('#graphbox').prop('disabled',true);
-            console.log('test');
-          })//end of click function  
+            $('#graphbox').block({message: '<h3>submitting</h3>'});
+
+          })//end of mysend 
+
+          $('#myreflesh').click(function(){
+            $('#graphbox').unblock();
+          })//end of myreflesh
       });
       </script>
 
@@ -59,12 +68,12 @@
         <div class="control"> <!-- control pannel -->
           <button id="myshowhide">show/hide graph</button>
           <button id="mysend">submit</button>
+          <button id="myreflesh">reflesh</button>
         </div>
 
         <div id="graphbox">
           <link rel="stylesheet" type="text/css" href="graph.css">
           <script type="text/javascript" src="graph.js"></script>
-          <a href="http://www.google.com">google link</a>
         </div>
 
       </div> <!-- end of graph -->
